@@ -285,12 +285,7 @@
 
         let repos = [];
 
-        fetch('https://api.github.com/user/repos', {
-            headers: {
-                'Authorization': 'token',
-                'Accept': 'application/vnd.github.v3+json'
-            }
-        })
+        fetch('https://api.github.com/users/darinaanikeeva/repos')
         .then(response => response.json())
         .then(data => repos = data);
         
